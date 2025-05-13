@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Lights Out в стилі "Будинок"</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="main-container">
+    <!-- Лівий блок: Кнопки управління -->
+    <div class="left-panel">
+      <button id="new-game">New Game</button>
+      <button id="restart">Restart</button>
+    </div>
+
+    <!-- Центральний блок: "Будинок" з дахом і ігровим полем -->
+    <div class="center-panel">
+      <div class="house">
+        <div class="roof"></div>
+        <div class="building">
+          <div id="game-board"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Правий блок: Інформаційний блок -->
+    <div class="right-panel">
+      <div class="info-box">
+        <div id="timer">Time: 0 s</div>
+        <div id="moves">Moves: 0</div>
+        <div id="target">Target: 0 moves</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
